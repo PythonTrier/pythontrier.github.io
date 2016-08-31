@@ -1,0 +1,21 @@
+---
+title:  "Book Club"
+date:   2016-08-03 22:32:45 +0200
+---
+<p>During last month’s MeetUp, we discussed the idea of introducing a technical book club. The idea being that we each read through selected chapters, attempt the tutorials or code discussed, and discuss that during the meetings. Any recommended titles are appreciated; however, we have three good ones to start with. They are:</p>
+
+<h2>Dive into Python 3</h2> by Mark Pilgrim
+
+<p>Available for free at <a href="http://www.diveintopython3.net/"> http://www.diveintopython3.net/</a> (freePDF and HTML version available)</p>
+
+<h2>Natural Language Processing with Python</h2>
+
+by Steven Bird, Ewan Klein, and Edward Loper
+
+<p>Available to read for free at <a href="http://www.nltk.org/book/">http://www.nltk.org/book/</a> </p>
+
+<h2>Natural Language Processing with Python</h2>
+
+by Steven Bird, Ewan Klein, and Edward Loper
+
+<p>Available to read for free at <a href="http://www.nltk.org/book/">http://www.nltk.org/book/</a></p>
