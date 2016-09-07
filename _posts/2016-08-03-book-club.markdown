@@ -7,24 +7,24 @@ date:   2016-08-03 22:32:45 +0200
 During last month’s MeetUp, we discussed the idea of introducing a technical book club. The idea being that we each read through selected chapters, attempt the tutorials or code discussed, and discuss that during the meetings. Any recommended titles are appreciated; however, we have three good ones to start with. They are:
 
 <br/><br/>
-## Dive into Python 3
+### Dive into Python 3
 by Mark Pilgrim
 
 Available for free at <http://www.diveintopython3.net/> (freePDF and HTML version available)
 
-## Natural Language Processing with Python
+### Natural Language Processing with Python
 
 by Steven Bird, Ewan Klein, and Edward Loper
 
 Available to read for free at <http://www.nltk.org/book/>
 
-## Natural Language Processing with Python
+### Natural Language Processing with Python
 
 by Steven Bird, Ewan Klein, and Edward Loper
 
 Available to read for free at <http://www.nltk.org/book/>
 
-## Automate the Boring Stuff with Python
+### Automate the Boring Stuff with Python
 
 by Al Sweigart
 
@@ -32,7 +32,7 @@ Available to read for free at <https://tinyurl.com/owk3jpu>
 
 There was a poll available on the MeetUp page, and the first book that we’re going to start with is Automate the Boring Stuff by Al Sweigart. Because of the rescheduling for last months meet, I suggest everyone take a look at the first chapter, and we can plan for more before the September meet.
 
-## Code Review
+### Code Review
 
 In an attempt to develop/sharpen the skills in the group we have a Jupyter notebook where code challenges are presented for the group to try. The link can be found at <https://srv.derpy.ws:55523/tree/Challenges>. There is a password so if you haven’t received it already, please feel free to contact me on MeetUp and I’ll send you the current password.
 

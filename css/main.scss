@@ -17,6 +17,8 @@ $spacing-unit:     30px;
 
 @import "syntax-highlighting";
 
-
+.post h3 {
+    clear:both;
+}
 
 // ...

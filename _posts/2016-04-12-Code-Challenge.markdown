@@ -2,7 +2,7 @@
 title:  "Code Challenge"
 date:   2016-04-12 12:00:00 +0200
 ---
-## Challenge 01
+### Challenge 01
 <img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
 
 Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
@@ -10,7 +10,7 @@ The numbers obtained should be printed in a comma-separated sequence on a single
 
 <br/>
 
-## Challenge 02
+### Challenge 02
 
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 Find the sum of all the multiples of 3 or 5 below 1000.

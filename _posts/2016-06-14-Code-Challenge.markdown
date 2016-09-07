@@ -2,7 +2,7 @@
 title:  "Code Challenge"
 date:   2016-06-14 12:00:00 +0200
 ---
-## Challenge 05
+### Challenge 05
 <img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
 
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
@@ -10,7 +10,7 @@ Find the largest palindrome made from the product of two 3-digit numbers.
 
 <br/>
 
-## Challenge 06
+### Challenge 06
 
 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
