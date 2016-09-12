@@ -18,12 +18,6 @@ by Steven Bird, Ewan Klein, and Edward Loper
 
 Available to read for free at <http://www.nltk.org/book/>
 
-### Natural Language Processing with Python
-
-by Steven Bird, Ewan Klein, and Edward Loper
-
-Available to read for free at <http://www.nltk.org/book/>
-
 ### Automate the Boring Stuff with Python
 
 by Al Sweigart
