@@ -2,7 +2,7 @@
 title:  "Book Club"
 date:   2016-08-03 22:32:45 +0200
 ---
-<img src="/images/BookClub.jpg" alt="Book Club" align="left" hspace="20" style="width:200px;">
+<img src="/images/BookClub.jpg" alt="Book Club" align="left" hspace="5" style="width:180px;">
 
 During last month’s MeetUp, we discussed the idea of introducing a technical book club. The idea being that we each read through selected chapters, attempt the tutorials or code discussed, and discuss that during the meetings. Any recommended titles are appreciated; however, we have three good ones to start with. They are:
 
