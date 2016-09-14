@@ -2,7 +2,7 @@
 title:  "Code Challenge"
 date:   2016-07-19 12:00:00 +0200
 ---
-## Challenge 07
+### Challenge 07
 <img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
 
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -10,7 +10,7 @@ What is the 10 001st prime number?
 
 <br/>
 
-## Challenge 08
+### Challenge 08
 
 The four adjacent digits in the 1000-digit number that have the greatest product are
 9 × 9 × 8 × 9 = 5832.
