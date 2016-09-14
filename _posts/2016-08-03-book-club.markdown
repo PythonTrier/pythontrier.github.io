@@ -7,7 +7,9 @@ date:   2016-08-03 22:32:45 +0200
 During last month’s MeetUp, we discussed the idea of introducing a technical book club. The idea being that we each read through selected chapters, attempt the tutorials or code discussed, and discuss that during the meetings. Any recommended titles are appreciated; however, we have three good ones to start with. They are:
 
 <br/><br/>
+
 ### Dive into Python 3
+
 by Mark Pilgrim
 
 Available for free at <http://www.diveintopython3.net/> (freePDF and HTML version available)
