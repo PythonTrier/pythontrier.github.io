@@ -17,3 +17,16 @@ url: "http://pythontrier.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
+
+exclude: [
+  "bower.json",
+  "bower_components",
+  "Gemfile",
+  "node_modules",
+  "output",
+  "package.json",
+  "README.md",
+  "webpack.config.js",
+  "webpack.production.config.js",
+  "*.iml"
+]
