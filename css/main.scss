@@ -22,3 +22,40 @@ $spacing-unit:     30px;
 }
 
 // ...
+
+
+p, table {
+
+  code {
+    font-weight: bold;
+    color: #0000ff;
+  }
+
+}
+
+
+code {
+
+  font-family: 'Source Code Pro', monospace;
+
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+
+  background-color: #0e61b4;
+
+  h1, h2, h3, a {
+    color: #ffffff;
+  }
+
+  .navbar {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+}
