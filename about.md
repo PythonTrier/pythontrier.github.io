@@ -3,12 +3,18 @@ layout: default2
 title:  "About"
 ---
 
-## Local meetup
+## Local MeetUp
 
-MeetUps are generally held on the second Tuesday of every month at:
+PythonTrier is a growing community of Python enthusiasts who meet once a month to discuss all things Python. Members offer presentations and lightning talks covering different packages or projects. Our goal is to promote the Python programming language and provide a venue where everyone can learn and share their knowledge with others.
+
+## Meeting Time and Location
+
+Meetings are generally held on the second Tuesday of every month at:
 Maschinendeck Hackerspace<br/>
 Güterstraße 74<br/>
 54295 Trier.<br/><br/>
+
+They are announced and coordinated through the group's MeetUp page; however, the meet inormation is also presented on this site. More detailed information can be found at [PythonTrier MeetUp](https://www.meetup.com/PythonTrier/).
 
 Google Maps:<br/>
 <a href="http://tinyurl.com/gppclhv">http://tinyurl.com/gppclhv</a>
