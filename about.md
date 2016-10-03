@@ -9,7 +9,7 @@ PythonTrier is a growing community of Python enthusiasts who meet once a month t
 
 ## Meeting Time and Location
 
-Meetings are generally held on the second Tuesday of every month at:
+Meetings are generally held on the second Tuesday of every month at:<br/>
 Maschinendeck Hackerspace<br/>
 Güterstraße 74<br/>
 54295 Trier.<br/><br/>
