@@ -3,11 +3,6 @@ title:  "Code Challenge"
 date:   2016-08-09 12:00:00 +0200
 ---
 
-### Test Code
-
-Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering:
-\\[ \frac{1}{n^{2}} \\]
-
 ### Challenge 09
 
 <img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
