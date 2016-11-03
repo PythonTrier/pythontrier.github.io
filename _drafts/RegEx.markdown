@@ -40,20 +40,21 @@ So this month we started chapter seven in Sweigart's, [Automate the Boring Stuff
 
 <br/>
 
-|Special Sequences||
-|---|---|
-|\A start of string|
-|\b matches empty string at word boundary (between \w and \W)|
-|\B matches empty string not at word boundary|
-|\d digit|
-|\D non-digit|
-|\s whitespace: [ \t\n\r\f\v]|
-|\S non-whitespace|
-|\w alphanumeric: [0-9a-zA-Z_]|
-|\W non-alphanumeric|
-|\Z end of string|
-|\g<id> matches a previously defined group|
-
+|---
+|Special Sequences
+|-|:-
+|\A start of string
+|\b matches empty string at word boundary (between \w and \W)
+|\B matches empty string not at word boundary
+|\d digit
+|\D non-digit
+|\s whitespace: [ \t\n\r\f\v]
+|\S non-whitespace
+|\w alphanumeric: [0-9a-zA-Z_]
+|\W non-alphanumeric
+|\Z end of string
+|\g<id> matches a previously defined group
+{:.tablestyle}
 <hr />
 
 [1]: https://automatetheboringstuff.com/chapter7/
