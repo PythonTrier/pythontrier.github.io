@@ -6,7 +6,7 @@ date:   2016-07-19 12:00:00 +0200
 <img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
 
 By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
-What is the 10 001st prime number?
+What is the 10001st prime number?
 
 <br/>
 
@@ -41,8 +41,13 @@ What is the value of this product?
 
 ### Want to give it a try?
 
-We have a Jupyter notebook where code challenges are presented for the group to try. The link can be found at <https://srv.derpy.ws:55523/tree/Challenges>. There is a password so if you haven’t received it already, please feel free to contact me on MeetUp and I’ll send you the current password.
+We have a Jupyter notebook where code challenges are presented for the group to try.
+The link can be found at <https://srv.derpy.ws:55523/tree/Challenges>. There is a password so if you haven’t
+received it already, please feel free to contact me on MeetUp and I’ll send you the current password.
 
-Past solutions will remain in each challenge notebook. Feel free to add your own solution at any time. Consider commenting your code to help others understand your approach. If you can’t understand why you wrote something after not looking at it for a while, it could probably benefit from a little extra commenting. A few new challenges will be posted every month.
+Past solutions will remain in each challenge notebook. Feel free to add your own solution at any time.
+Consider commenting your code to help others understand your approach. If you can’t understand why you wrote
+something after not looking at it for a while, it could probably benefit from a little extra commenting.
+A few new challenges will be posted every month.
 
 <hr />

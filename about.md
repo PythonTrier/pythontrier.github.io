@@ -9,15 +9,16 @@ PythonTrier is a growing community of Python enthusiasts who meet once a month t
 
 ## Meeting Time and Location
 
-Meetings are generally held on the second Tuesday of every month at:<br/>
-Maschinendeck Hackerspace<br/>
+Meetings are generally held on the second Tuesday of every month at:
+
+<a href="http://www.maschinendeck.org/">Maschinendeck Hackerspace</a><br/>
 Güterstraße 74<br/>
 54295 Trier.<br/><br/>
 
 They are announced and coordinated through the group's MeetUp page; however, the meet information is also presented on this site. More detailed information can be found at [PythonTrier MeetUp](https://www.meetup.com/PythonTrier/).
 
-Google Maps:<br/>
-<a href="http://tinyurl.com/gppclhv">http://tinyurl.com/gppclhv</a>
+Google Maps (<a href="http://tinyurl.com/gppclhv">http://tinyurl.com/gppclhv</a>)<br/>
+
 
 <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyBrCzVx0B-6wf5eJRPiQxGLFFmMal__f_o"></script>
 
