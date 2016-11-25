@@ -3,7 +3,7 @@ title:  "Pi and More 2017"
 date:   2016-11-25 12:00:00 +0200
 ---
 
-<img src="/images/piandmore-big.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
+<img src="/images/piandmore-big.png" alt="Pi and More Logo" align="left" hspace="5" style="width:180px;">
 [Pi and More](https://piandmore.de/en) just recently announced its Raspberry Jam  $$9\frac{1}{2}$$ will be held on the 14th of January 2017 at the Hochschule Niederrhein in Krefeld. The $$\frac{1}{2}$$ indicates this will be one of their smaller, but equally interesting, winter events.Never been to an event before? Checkout some of the [past events](https://piandmore.de/en/past-events/pi-and-more-9) to see pictures, schedules, and other information from previous Jams.  
 
 Krefeld is about a three hour drive from Trier, so if you're interested in going and would like to carpool, please contact us at PythonTrier@gmail.com so we can coordinate transportation.
