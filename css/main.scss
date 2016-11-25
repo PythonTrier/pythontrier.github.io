@@ -4,7 +4,28 @@
 @charset "utf-8";
 
 @import "bootstrap";
+code.block {
+    display: block;
+    margin-left: 1em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+code {
+    color: #066;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+}
+code .new {
+    background-color: #ff0;
+}
 
+code .wrong {
+    color: #900;
+}
+
+code .greedy{
+    background-color: #0f0;
+}
 // syntax highlighting
 
 $spacing-unit:     30px;
@@ -23,10 +44,9 @@ p, table {
 
   code {
     font-weight: bold;
-    color: #0000ff;
+    color: #066;
   }
 }
-
 
 code {
   font-family: 'Source Code Pro', monospace;
@@ -67,7 +87,6 @@ header {
 p {
   text-align: justify;
 }
-
 
 .post {
 
