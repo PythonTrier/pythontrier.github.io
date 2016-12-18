@@ -3,7 +3,11 @@
 ---
 @charset "utf-8";
 
+@import "config";
 @import "bootstrap";
+@import "syntax-highlighting";
+@import "meetup";
+
 code.block {
     display: block;
     margin-left: 1em;
@@ -34,7 +38,6 @@ $spacing-unit:     30px;
   margin-bottom: $spacing-unit / 2;
 }
 
-@import "syntax-highlighting";
 
 .post h3 {
     clear:both;

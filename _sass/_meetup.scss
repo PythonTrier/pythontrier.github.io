@@ -1,0 +1,49 @@
+
+@import "config";
+
+
+.coming-meetups {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+    display: block;
+    min-height: 30px;
+
+    span.meetup-date {
+      font-weight: bold;
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: middle;
+      line-height: 30px;
+    }
+
+  }
+
+}
+
+
+
+.mu-widget > a > img {
+  display: none;
+}
+
+.mu-rsvp-btn:after {
+  content: 'RSVP';
+  color: #ffffff;
+  text-shadow: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: $color-blue;
+  font-family: verdana, geneva, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.mu-widget .prompt {
+  overflow: visible !important;
+}
