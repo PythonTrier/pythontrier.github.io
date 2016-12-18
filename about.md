@@ -20,7 +20,7 @@ They are announced and coordinated through the group's MeetUp page; however, the
 Google Maps (<a href="http://tinyurl.com/gppclhv">http://tinyurl.com/gppclhv</a>)<br/>
 
 
-<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyBrCzVx0B-6wf5eJRPiQxGLFFmMal__f_o"></script>
+<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&key=AIzaSyCUM5w_mwxGxy5jT5OVply8RWTpsco1QhE"></script>
 
 <div style="overflow:hidden;height:500px;max-width:600px;width:100%;">
   <div id="gmap_canvas" style="height:500px;max-width:600px;width:100%;">
