@@ -32,18 +32,19 @@ var EventList = React.createClass({
 
     let eventDiv = (e) => {
       return (
-        <div key={`event-${e.id}`}>
-          {moment(e.time).format("DD MMM YY")} <a href={`https://www.meetup.com/de-DE/PythonTrier/events/${e.id}/`}>RSVP</a>
-        </div>
+        <li key={`event-${e.id}`}>
+          <span className="meetup-date">{moment(e.time).format("DD MMM YY")}</span>
+          <a href={`https://www.meetup.com/de-DE/PythonTrier/events/${e.id}/`} data-event={e.id} className="mu-rsvp-btn"></a>
+        </li>
       );
     };
 
     return (
-      <div>
+      <ul className="coming-meetups">
         {
           this.state.events.map(e => eventDiv(e))
         }
-      </div>
+      </ul>
     );
 
   },
@@ -58,6 +59,26 @@ var EventList = React.createClass({
 
     });
 
+  },
+
+  componentDidMount() {
+
+    // the meetup script does not detect the .mu-rsvp-btn buttons
+    // even when run from the componentDidMount function
+    // lets delay the meetup script for a few ms more
+    setTimeout(() => {
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;
+          js.async=true;
+          js.src="https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=q544quuj54atpv2e6ac7qkignb";
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,"script","mu-bootjs");
+    }, 200);
+
   }
 
 });
@@ -67,5 +88,3 @@ ReactDOM.render(
   <EventList />,
   document.getElementById("event-list")
 );
-
-
