@@ -12,3 +12,5 @@ The schedule has yet to be published; however, they are soliciting for [contribu
 >*"We are looking for persons or groups who are interested in presenting a project or a topic. We welcome presentations of own or other projects (e.g., hardware and software projects), or a presentation of general topics, like first steps with the Raspberry Pi, programming, system internals, hardware tutorials, etc. Contributions about the Raspberry Pi are as welcome as contributions about other embedded systems or microcontrollers. The event aims at beginners and experts alike. Therefore, simple and small projects fit as well as workshops for experts."*
 
 You can find more details on their page so check it out. Hope to see you there!
+
+<hr />
