@@ -127,7 +127,7 @@
 	  componentDidMount: function componentDidMount() {
 
 	    var rsvpDevJS = "https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=q544quuj54atpv2e6ac7qkignb";
-	    var rsvpLiveJS = "https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=cm7idhaj6nooo6740tg1ptfce2";
+	    var rsvpLiveJS = "https://a248.e.akamai.net/secure.meetupstatic.com/s/script/2012676015776998360572/api/mu.btns.js?id=85apjnif3pivm5e963lejv25td";
 	    var rsvpJS;
 
 	    if (location.host == "localhost") rsvpJS = rsvpDevJS;else rsvpJS = rsvpLiveJS;
