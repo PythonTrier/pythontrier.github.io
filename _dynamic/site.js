@@ -33,7 +33,7 @@ var EventList = React.createClass({
     let eventDiv = (e) => {
       return (
         <li key={`event-${e.id}`}>
-          <span className="meetup-date">{moment(e.time).format("DD MMM YY")}</span>
+          <a href={`https://www.meetup.com/de-DE/PythonTrier/events/${e.id}/`} className="meetup-date">{moment(e.time).format("DD MMM YY")}</a>
           <a href={`https://www.meetup.com/de-DE/PythonTrier/events/${e.id}/`} data-event={e.id} className="mu-rsvp-btn"></a>
         </li>
       );
