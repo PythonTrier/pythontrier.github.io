@@ -9,6 +9,7 @@ date:   2016-11-25 12:00:00 +0200
 Krefeld is about a three hour drive from Trier, so if you're interested in going and would like to carpool, please contact us at PythonTrier@gmail.com so we can coordinate transportation.
 
 The schedule has yet to be published; however, they are soliciting for [contributions](https://frosch.piandmore.de/en/pam9-5/call/).
+
 >*"We are looking for persons or groups who are interested in presenting a project or a topic. We welcome presentations of own or other projects (e.g., hardware and software projects), or a presentation of general topics, like first steps with the Raspberry Pi, programming, system internals, hardware tutorials, etc. Contributions about the Raspberry Pi are as welcome as contributions about other embedded systems or microcontrollers. The event aims at beginners and experts alike. Therefore, simple and small projects fit as well as workshops for experts."*
 
 You can find more details on their page so check it out. Hope to see you there!

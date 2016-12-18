@@ -89,7 +89,7 @@ for a station with 9 tracks. Today, on our station, track 4 was blocked, so it's
 <pre><code>[1-3<span class="new">5-9]</span>
 </code></pre>
 
-So we divided the input area into two areas 1-3 and 5-9. You can see: The two areas are simply written next to each other. This might feel a littel strange at first (intuitively one would like to make a space), but we will encounter that quite often.
+So we divided the input area into two areas 1-3 and 5-9. You can see: The two areas are simply written next to each other. This might feel a little strange at first (intuitively one would like to make a space), but we will encounter that quite often.
 
 ### Multiple regular expressions
 
@@ -275,7 +275,9 @@ for example:
 The slashes are the limiting characters (others are conceivable here, for example ~), and "i" and "m" in this case are modifiers. Common modifiers include:
 
 * **i** Case-Insensitivity (case-insensitive)
+
 * **s** point is multi-line able: the point also eats line breaks, this is not the case as a rule.
+
 * **m** line mode: The characters ^ and $ also match the beginning and end of the lines. Without the modifier, they only match the start and end of the entire string.
 
 Modifiers always refer to the entire expression and are therefore an easily overlooked source of error.
