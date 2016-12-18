@@ -147,7 +147,7 @@
 	          fjs.parentNode.insertBefore(js, fjs);
 	        }
 	      }(document, "script", "mu-bootjs");
-	    }, 200);
+	    }, 1000);
 	  }
 	});
 
