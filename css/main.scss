@@ -90,6 +90,8 @@ p {
 
 .post {
 
+  @include clearfix();
+
   .post-header {
     margin-bottom: 15px;
   }

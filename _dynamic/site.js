@@ -31,7 +31,11 @@ var EventList = React.createClass({
   render() {
 
     let eventDiv = (e) => {
-      return (<div key={`event-${e.id}`}>{moment(e.time).format("DD MMM YY")}</div>);
+      return (
+        <div key={`event-${e.id}`}>
+          {moment(e.time).format("DD MMM YY")} <a href={`https://www.meetup.com/de-DE/PythonTrier/events/${e.id}/`}>RSVP</a>
+        </div>
+      );
     };
 
     return (
