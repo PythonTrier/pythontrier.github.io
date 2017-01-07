@@ -98,8 +98,8 @@
 	        "li",
 	        { key: "event-" + e.id },
 	        _react2.default.createElement(
-	          "span",
-	          { className: "meetup-date" },
+	          "a",
+	          { href: "https://www.meetup.com/de-DE/PythonTrier/events/" + e.id + "/", className: "meetup-date" },
 	          (0, _moment2.default)(e.time).format("DD MMM YY")
 	        ),
 	        _react2.default.createElement("a", { href: "https://www.meetup.com/de-DE/PythonTrier/events/" + e.id + "/", "data-event": e.id, className: "mu-rsvp-btn" })
