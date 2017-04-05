@@ -1,3 +1,10 @@
+# Intellij project files and settings
+*.iml
+.idea
+
+# Draft posts
+_drafts
+
 _site
 .sass-cache
 .jekyll-metadata
@@ -5,6 +12,3 @@ Gemfile.lock
 node_modules
 bower_components
 output
-.idea
-*.iml
-_drafts
