@@ -1,10 +1,9 @@
 ---
-title:  "Regular Expressions"
+title:  "Upcoming Events"
 date:   2017-04-08 12:00:00 +0200
 layout: post
 ---
 
-### Upcoming Events around Europe
 
 There are a few conferences in Europe over the next year, but the next two are right here in Germany. This weekend is
 the PythonCamp in Cologne, though it's probably a little late if you haven't already made plans to go.  There's still an
