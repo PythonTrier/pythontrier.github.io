@@ -12,15 +12,33 @@ can cause complications. There is a better way to safely install different versi
 integrity of the system installed version; enter, virtual environments. Using virtual environments allows you to install 
 multiple different versions while keeping a healthy separation between your system and your projects.
 
-Getting started is simple. Install virtualenv with pip:
-```python
-pip install virtualenv
+I use [Homebrew](https://brew.sh) as my package manager so pip and python commands have been symlinked to my brew 
+library. Per their instructions simply paste
 ```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+``` 
+into your terminal and it will guide you through the rest. 
+
+**Note:** It's been a little while, but you may need to install XCode command-line tools. If you need to do that you can 
+enter ``` xcode-select --install``` and that should do the trick. 
+
+From there, the first thing I do is ```brew install python python3```.
+
+After that, getting started with virtualenv is pretty simple. I would also recommend adding virtualenvwrapper, which 
+helps keep all of your environments in one place. Install them both with pip:
+```python
+pip install virtualenv virtualenvwrapper
+```
+When you're done there are a few exports that you'll want to add to your .rc file. The first sets the location where you 
+want to store your environment files. I have mine set up in a folder called Envs in my home directory. You can set your
+projects folder as you like. I like to keep mine separate because your project files have nothing to do with your vrtual
+env, a concept I'll elaborate on in a minute. You can set the default binary by setting your VIRTUALENV_PYTHON variable 
+to the path of your preferred version. In the example below, I've linked mine to the python3 version managed by brew. 
+The final bit is for virtualenvwrapper. Set those, source your .rc file and you should be good to begin. 
 
 ```bash
 export WORKON_HOME=$HOME/Envs
 export PROJECT_HOME=$HOME/Envs/Projects
 export VIRTUALENV_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
-source /usr/local/opt/autoenv/activate.sh
 ```
