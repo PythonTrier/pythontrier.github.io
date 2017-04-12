@@ -1,6 +1,6 @@
 ---
-title:  "Virtual Environments"
-date:   2017-04-12 12:00:00 +0200
+title:  "Up and Running with Virtual Environments"
+date:   2017-04-13 12:00:00 +0200
 layout: post
 ---
 
@@ -29,6 +29,7 @@ helps keep all of your environments in one place. Install them both with pip:
 ```python
 pip install virtualenv virtualenvwrapper
 ```
+<!--break-->
 When you're done there are a few exports that you'll want to add to your .rc file. The first sets the location where you 
 want to store your environment files. I have mine set up in a folder called Envs in my home directory. You can set your
 projects folder as you like. I like to keep mine separate because your project files have nothing to do with your vrtual
@@ -42,3 +43,20 @@ export PROJECT_HOME=$HOME/Envs/Projects
 export VIRTUALENV_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 ```
+
+Since you installed virtualenvwrapper, you need only type ```mkvirtualenv``` and then add the name of your virtual env
+and virtualenvwrapper will install and initialize your environment for you. In the example below, you can see that I 
+created an env called 'example'.  You can tell that an env is active when you see it's name in brackets to the left of
+your prompt. 
+
+<img src="/images/VirtualEnv1.png" alt="Creating a virtual environment" align="center">
+
+If you decide come back to your project later simply type ```workon``` and add your env name from wherever you are and
+it will start up your environment. When you're done type ```deactivate``` and you're done. 
+
+This brings me to the bit I mentioned earlier about environments and your code not necessarily having to do with each
+other.  When your environment is active installing packages with pip are only installed to that environment. Delete the 
+folder where your environment lives and everything is gone and your system python is not affected. You could, however, 
+set up a virtual env that runs a particular version that you like and then point your IDE or editor to that environment.
+ You don't actually need a separate environment for each project. It is handy, however, if you want to keep package 
+ separation between projects. 
