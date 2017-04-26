@@ -6,10 +6,10 @@ layout: post
 
 <img src="/images/virtualenvs.png" alt="Virtual environments" align="left" hspace="5" style="width:180px;">
 
-One of the problems I encountered working with Brew, was a difficulty controlling which versions of Python I was able to
-use specifically. You can check which versions you currently have on your system by executing ```brew info <desired 
-forumla>```. As you can see in my example here, I have 3.5.1, 3.5.2, 3.6.0, and 3.6.1 on my system.  You can see that 
-version 3.6.1 is starred as the currently selected version.
+One of the problems I encountered working with Brew, was how to select which versions of Python are used when I 
+installed a virtual environment. You can check which versions you currently have on your system by executing 
+```brew info <desired forumla>```. As you can see in my example, I have 3.5.1, 3.5.2, 3.6.0, and 3.6.1 on my system.  
+You will also notice that version 3.6.1 is starred as the currently selected version.
 
 ```
 ➜  ~ brew info python3
@@ -31,8 +31,8 @@ From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/python3.rb
 
 Using ```mkvirtualenv <env name>``` will install the starred version. But what if I'm working on a project that uses an 
 older version of Python? If you have the version that you want in your cellar, then you can use 
-```brew switch <formula> <version>```. Here you can see that I switched to version 3.5.1. When I enter 
-```brew info python3``` again, it now shows me that my starred version of Python is indeed version 3.5.1.
+```brew switch <formula> <version>```. Here you can see that I successfully switched to version 3.5.1. When I enter 
+```brew info python3``` again, it now shows that my starred version is indeed 3.5.1.
 
 <!--break-->
 
@@ -54,10 +54,8 @@ https://www.python.org/
 From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/python3.rb
 ```
 
-I can test this by creating a virtualenv and see which version is installed. Here I created a virtualenv called testEnv,
-and sure enough, it installed version 3.5.1. The problem one may run into is when you want a version that existed prior 
-to when you installed Python with Brew. The repository for previous formula versions has been deprecated, which has led 
-to several articles and StackOverflow questions on how to fill this void.  
+You can also test this by creating a virtualenv and see which version is installed. Here I created a virtualenv called 
+testEnv, and sure enough, it installed version 3.5.1.  
 
 ```
 ➜  ~ mkvirtualenv testEnv
@@ -73,78 +71,127 @@ virtualenvwrapper.user_scripts creating /Users/Steglitz/Envs/testEnv/bin/postact
 virtualenvwrapper.user_scripts creating /Users/Steglitz/Envs/testEnv/bin/get_env_details
 ```
 
-My preferred method is to use pyenv.  Installing is easy with Brew. ```brew install pyenv```.  Once you've installed 
-pyenv, you can check which versions are available by using ```pyenv install --list```. The list of options is quite 
-extensive. It includes versions of Python 2, Python 3, Anaconda, Anaconda 2 & 3, ironpython, jython, miniconda, 
-miniconda 2 & 3, pypy, pyston, and stackless python.  Let's keep it simple though and install Python 3.1.4.  
+The problem one may run into is when you want a version that existed prior to when you installed Python with Brew. The 
+repository for previous formula versions has been deprecated, which has led to several articles and StackOverflow 
+questions on how to fill this void. 
 
-One important thing to note is that you need your pyenv directory to be before /usr/local/bin in your path.  You can 
+So if you can't use ```brew switch```, then you can expand your options using pyenv.  Installing is easy with Brew. 
+```brew install pyenv```.  Once you've installed pyenv, you can check which versions are available by using 
+```pyenv install --list```. The list of options is quite extensive. It includes versions of Python 2, Python 3, 
+Anaconda, Anaconda 2 & 3, ironpython, jython, miniconda, miniconda 2 & 3, pypy, pyston, and stackless python.  
+
+**Note:** As of the posting of this article, I received errors for Python versions 3.1 and 3.2. Support was deprecated 
+by virtualenv for certain versions. If you receive something like
+```OSError: Command /Users/Steglitz/Envs... - setuptools pip wheel failed with error code 1```, then you may have been 
+trying to install an unsupported version. Just something to be aware of.
+
+Also important to note is that you need your pyenv directory to be before /usr/local/bin in your path.  You can 
 configure that in your .rc file by adding the following exports. 
+
 ```
 export PATH=/usr/local/bin:$PATH
 export PYENV_ROOT=/usr/local/var/pyenv
 export PATH="$PYENV_ROOT/bin:$PATH"
 ```
-By default pyenv saves each version of Python in ```~/.pyenv/``` I want my virtualenvs to be stored in the same 
+By default, pyenv saves each version of Python in ```~/.pyenv/``` I want my virtualenvs to be stored in the same 
 neighborhood with my homebrew, so I've set my ```PYENV_ROOT``` to ```/usr/local/var/pyenv```. This is where it will 
 store all of my Python versions. Now everything will be installed in a nice, easy to find, spot. Now it's a matter of 
-installing the version you want. The following installs Python 3.1.4:
+installing the version you want. So now let's install Python 3.3.0.  
 
 ```
-➜  ~ pyenv install 3.1.4
-Downloading Python-3.1.4.tgz...
--> https://www.python.org/ftp/python/3.1.4/Python-3.1.4.tgz
-Installing Python-3.1.4...
+➜  ~ pyenv install 3.3.0
+Downloading Python-3.3.0.tgz...
+-> https://www.python.org/ftp/python/3.3.0/Python-3.3.0.tgz
+Installing Python-3.3.0...
 patching file ./Modules/readline.c
-Hunk #1 succeeded at 178 (offset -53 lines).
-Hunk #2 succeeded at 692 (offset -81 lines).
-Hunk #3 succeeded at 744 (offset -82 lines).
-Hunk #4 succeeded at 801 (offset -83 lines).
-Hunk #5 succeeded at 841 with fuzz 2 (offset -102 lines).
+Hunk #1 succeeded at 225 (offset -6 lines).
+Hunk #2 succeeded at 759 (offset -14 lines).
+Hunk #3 succeeded at 812 (offset -14 lines).
+Hunk #4 succeeded at 870 (offset -14 lines).
+Hunk #5 succeeded at 918 with fuzz 2 (offset -25 lines).
 patching file ./Lib/ssl.py
+Hunk #2 succeeded at 618 (offset -31 lines).
 patching file ./Modules/_ssl.c
-Hunk #3 succeeded at 1799 (offset -1 lines).
-Installed Python-3.1.4 to /usr/local/var/pyenv/versions/3.1.4
-
-Downloading setuptools-17.1.1.tar.gz...
--> https://pyenv.github.io/pythons/5bf42dbf406fd58a41029f53cffff1c90db5de1c5e0e560b5545cf2ec949c431
-Installing setuptools-17.1.1...
-Installed setuptools-17.1.1 to /usr/local/var/pyenv/versions/3.1.4
-
-Downloading pip-1.5.6.tar.gz...
--> https://pypi.python.org/packages/source/p/pip/pip-1.5.6.tar.gz
-Installing pip-1.5.6...
-Installed pip-1.5.6 to /usr/local/var/pyenv/versions/3.1.4
+Hunk #1 succeeded at 1683 (offset -63 lines).
+Hunk #2 succeeded at 2750 (offset -94 lines).
+Installing pip from https://bootstrap.pypa.io/get-pip.py...
+Installed Python-3.3.0 to /usr/local/var/pyenv/versions/3.3.0
 ```
 
-You can check which versions you have installed with: 
+Assuming everything installed correctly, you should be able to see your newly installed version now.
 
 ```
 ➜  ~ pyenv versions
   system
-  3.1.4
+  3.3.0
 * 3.5.3 (set by /usr/local/var/pyenv/version)
   3.6.0
 
 ```
 
-You can see that installing doesn't change the global version. You can change that with ```pyenv global 3.1.4```.  Now 
-when you check the versions again you'll see that it has updated the global version.
+You may also note that installing does not change the global version. You can change that with ```pyenv global 3.3.0```.
+Now when you check the versions again, you'll see that it has updated the global version.
 
 ```
 ➜  ~ pyenv versions
   system
-* 3.1.4 (set by /usr/local/var/pyenv/version)
+* 3.3.0 (set by /usr/local/var/pyenv/version)
   3.5.3
   3.6.0
 ```
 
+Now you create your virtual environment by using 
+```virtualenv -p /path/to/your/pyenv/version/bin/ ~/Your/desired/env/location```. If your destination file doesn't 
+exist, one will be created automatically.
 
 ```
-➜  ~ virtualenv -p /usr/local/var/pyenv/versions/3.5.3/bin/python3.5 ~/Envs/Projects/test353
-Running virtualenv with interpreter /usr/local/var/pyenv/versions/3.5.3/bin/python3.5
-Using base prefix '/usr/local/var/pyenv/versions/3.5.3'
-New python executable in /Users/Steglitz/Envs/Projects/test353/bin/python3.5
-Also creating executable in /Users/Steglitz/Envs/Projects/test353/bin/python
+➜  ~ virtualenv -p /usr/local/var/pyenv/versions/3.3.0/bin/python3.3 ~/Envs/Projects/test330
+Running virtualenv with interpreter /usr/local/var/pyenv/versions/3.3.0/bin/python3.3
+Using base prefix '/usr/local/var/pyenv/versions/3.3.0'
+New python executable in /Users/Steglitz/Envs/Projects/test330/bin/python3.3
+Also creating executable in /Users/Steglitz/Envs/Projects/test330/bin/python
 Installing setuptools, pip, wheel...done.
 ```
+
+Then activate by sourcing the virtualenv bin with activate: 
+```
+➜  ~ source ~/Envs/Projects/test330/bin/activate
+(test330) ➜  ~
+```
+
+You'll know that you're in your virtual env when you see the env name in brackets to the left of your prompt. Just as a 
+demonstration, you can see that the version when activated is 3.3.0.
+
+```
+(test330) ➜  ~ python -V
+Python 3.3.0
+```
+
+When you deactivate, the python version reverts to your system python. 
+
+```
+(test330) ➜  ~ deactivate
+➜  ~ python -V
+Python 2.7.13
+```
+
+A real quick demonstration of why this happens becomes more apparent when you look at the path file before you activate,
+and then once again afterward.
+
+```
+➜  ~ echo $PATH
+/Users/Steglitz/.rvm/gems/ruby-2.3.0/bin:/Users/Steglitz/.rvm/gems/ruby-2.3.0@global/bin:/Users/Steglitz/.rvm/rubies/
+ruby-2.3.0/bin:/usr/local/var/pyenv/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Steglitz/
+.rvm/bin
+➜  ~ source ~/Envs/Projects/test330/bin/activate
+(test330) ➜  ~ echo $PATH
+/Users/Steglitz/Envs/Projects/test330/bin:/Users/Steglitz/.rvm/gems/ruby-2.3.0/bin:/Users/Steglitz/.rvm/gems/
+ruby-2.3.0@global/bin:/Users/Steglitz/.rvm/rubies/ruby-2.3.0/bin:/usr/local/var/pyenv/bin:/usr/local/bin:/usr/local/bin:
+/usr/bin:/bin:/usr/sbin:/sbin:/Users/Steglitz/.rvm/bin
+```
+
+You can see that after activating, the test330 environment's 'bin' directory was placed at the beginning of the 
+```$PATH```. As a result, the virtual env's directory will be the first directory searched, and you end up using the 
+virtual env Python instead of the system Python. This should also be a consideration when you have more than one virtual 
+env activated. It is possible that running more than one version at a time could create conflicts between environments. 
+So keep it simple, keep it separate and everything should be good. 
