@@ -1,6 +1,6 @@
 ---
 title:  "Up and Running with Virtual Environments, Part II"
-date:   2017-04-25 12:00:00 +0200
+date:   2017-04-26 12:00:00 +0200
 layout: post
 ---
 
