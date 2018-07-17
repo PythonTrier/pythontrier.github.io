@@ -1,5 +1,5 @@
 ---
-title:  "New Mailing List"
+title:  "Exercism.io, Part I"
 date:   2018-07-08 12:00:00 +0200
 layout: post
 ---
