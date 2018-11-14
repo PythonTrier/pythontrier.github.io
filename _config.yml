@@ -11,7 +11,7 @@ email: pythontrier@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Helping grow the community of Python developers by sharing what we know with those that come to learn.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pythontrier.com" # the base hostname & protocol for your site
+url: "https://pythontrier.github.io" # the base hostname & protocol for your site
 
 google_analytics: UA-89152428-1
 
