@@ -4,7 +4,7 @@ date:   2018-07-17 12:00:00 +0200
 layout: post
 ---
 
-<img src="/images/code.png" alt="Code Challenge" align="left" hspace="5" style="width:180px;">
+<img src="/images/PyChallenge.jpg" alt="Python Challenge" align="left" hspace="5" style="width:180px;">
 
 Exercism.io was down during our last meeting as they were upgrading to a new and improved version of their site. As 
 such, we decided to try some of the challenges that can be found at [PythonChallenge.com](www.pythonchallenge.com). It's 
