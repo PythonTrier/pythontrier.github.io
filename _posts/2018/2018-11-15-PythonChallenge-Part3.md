@@ -1,6 +1,6 @@
 ---
 title:  "Python Challenge, Part III"
-date:   2018-11-14 23:00:00
+date:   2018-11-15 23:00:00
 layout: post
 ---
 
