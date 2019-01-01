@@ -10,7 +10,7 @@ Continuing on our journey through the challenges at [PythonChallenge.com](www.py
 few levels that we completed during the last meet.
 
 **SPOILERS!** As stated in our last post, We will discuss the challenges, the clues, and how we solved each level. We 
-discovered other sites have done the same thing, but chose to solve these on our own. It's more fun that way. 
+discovered other sites have done the same thing but chose to solve these on our own. It's more fun that way. 
 Afterwards, it's interesting to go back and see how others have solved the same problem, but we recommend you solve the 
 problems on your own. 
 
@@ -21,9 +21,9 @@ but it took a minute before someone suggested we just try renaming the URL from 
 
 <!--break-->
 
-Sure enough, we were prompted to download a zip file. When you extract the file you see 910 text files each with a 
+Sure enough, we were prompted to download a zip file. When you extract the file, you see 910 text files each with a 
 number.txt. There was a readme.txt at the bottom that gave the following hint. Hint one was "Start from 90052" and hint 
-two was "answer is inside the zip." This lookd a lot like challenge four so we adapted our code to process the text files
+two was "answer is inside the zip." This looked a lot like challenge four so we adapted our code to process the text files
 in a similar way. 
 
 When we attempted these challenges, we first tried to solve the problem, but afterwards, we tried to accomplish as much
@@ -80,10 +80,10 @@ while next_nothing.isdigit() == True:
     r = r'[0-9]*$'
 ```
 
-Now a quick note, apparently you can store comments in zip files and you can also extract them with zip_ref. So as we 
-went through each file, we processed it for it's comment and added it to the commentSum variable. Since we learned about
+Now a quick note, apparently you can store comments in zip files, and you can also extract them with zip_ref. So as we 
+went through each file, we processed it for its comment and added it to the commentSum variable. Since we learned about
 this after we were able to follow the numeric path, we decided to expand our final output to automatically print out the 
-final output created bby the comments. 
+final output created by the comments. 
 ```python
     curFile = str(next_nothing) + ".txt"
     commentSum += zip_ref.getinfo(curFile).comment.decode("utf-8")
