@@ -41,3 +41,14 @@ jekyll serve
 
 Jekyll build builds the site and outputs a static site to the _site directory. Jekyll serve does the same thing as 
 jekyll build except it rebuilds any time you make a change.
+
+NOTE: You may get the following error. 
+```bash
+FATAL: Listen error: unable to monitor directories for changes.
+```
+If you get that, you can raise the limit with the following 
+[[1]](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers):
+
+```bash
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+```
