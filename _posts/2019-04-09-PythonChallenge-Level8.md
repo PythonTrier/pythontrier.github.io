@@ -1,6 +1,6 @@
 ---
 title:  "Python Challenge, Level 8"
-date:   2019-04-16 15:00:00
+date:   2019-04-09 21:00:00
 layout: post
 ---
 
@@ -15,7 +15,6 @@ discovered other sites have done the same thing but chose to solve these on our 
 it's interesting to go back and see how others have solved the same problem, but we recommend you solve the problems on 
 your own. 
 
-## Level 8
 This challenge starts at http://www.pythonchallenge.com/pc/def/integrity.html. There's a picture of a bee on a flower 
 with a sub-title asking, "Where is the missing link?" When you hover around the picture you can see the cursor changes 
 to a pointer and there's a link to http://www.pythonchallenge.com/pc/return/good.html. If you actually select it, you'll

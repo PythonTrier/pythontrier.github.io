@@ -1,6 +1,6 @@
 ---
-title:  "Python Challenge, Part VI"
-date:   2019-04-09 21:00:00
+title:  "Python Challenge, Level 9"
+date:   2019-04-16 16:00:00
 layout: post
 ---
 
@@ -15,14 +15,9 @@ discovered other sites have done the same thing but chose to solve these on our 
 it's interesting to go back and see how others have solved the same problem, but we recommend you solve the problems on 
 your own. 
 
-## Level 9
-
-On the page for this challenge is a photo which shows a view of a lake and a tree. The outline of the tree is marked with
-some square dots.
-
-<!--break-->
-
-To get more hints to solve the challenge we were looking at the source code of the page. Following hint is given.
+On the page for this challenge is a photo which shows a view of a lake and a tree. The outline of the tree is marked 
+with some square dots. As it wasn't immediately apparent what the dots were for, we looked for further hints by 
+inspecting the page code. Inside we found the following hint:
 
 ```javascript
 <!--
@@ -35,17 +30,19 @@ second:
 156,141,165,135,169,131,176,130,187,134,191,...
 -->
 ```
+<!--break-->
 
-Our first reaction was to add the two rows of numbers. Which did not made to much sense, as both have a different lenght.
+Our first reaction was to add the two rows of numbers. This did not make much sense, as both had different lengths.
 
-By counting the numbers of each row we found out that both contains an equal count of numbers. So we tried to use them as
-coordinates of a point, like the square dots on the photo suggest.
+By counting the numbers in each row we found out that both contained an equal count of numbers, so we tried to use them 
+as coordinates of a point, as the square dots on the photo suggest.
 
-For plotting the dots we choose the library [mathplotlib](https://matplotlib.org/api/index.html). The method `pyplot.plot`
-accepts the x/y-coordinates as arrays. As the numbers in `first` and `second` can bee seen as one-dimensional arrays, we
-looked for a solution to slice each of them into two arrays, for the `x` and `y` coordinates. From a former project we knew
-already the library [NumPy](https://www.numpy.org) which provides a method [r_](https://www.numpy.org/devdocs/reference/generated/numpy.r_.html) which
-provides the functionality we want.
+For plotting the dots we choose the library [mathplotlib](https://matplotlib.org/api/index.html). The method 
+`pyplot.plot` accepts the x/y-coordinates as arrays. As the numbers in `first` and `second` can be seen as one-
+dimensional arrays, we looked for a solution to slice each of them into two arrays, for the `x` and `y` coordinates. We 
+were already familiar with the [NumPy](https://www.numpy.org) which provides a method [r_]
+(https://www.numpy.org/devdocs/reference/generated/numpy.r_.html) library, which we had used in a previous project. It 
+happened to provide the exact functionality we wanted.
 
 > Translates slice objects to concatenation along the first axis.
 
@@ -97,7 +94,8 @@ To show the plotted data we call the method `pyplot.show()`.
 
 <img src="/images/challenge9_bull.jpg" alt="outline of a bull" align="center" hspace="5" style="width:640px;">
 
-This looks like the shape of a bull. And gives us the name of the next challenge page. So we change the url from `…/pc/return/good.html` to `…/pc/return/bull.html` and are ready for the next challenge.
+This looks like the shape of a bull. And gives us the name of the next challenge page. So we change the url from 
+`…/pc/return/good.html` to `…/pc/return/bull.html` and are ready for the next challenge.
 
 <br/>
 <hr />
